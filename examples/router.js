@@ -12,5 +12,9 @@ export default new Router({
     path: "/test",
     name: "test",
     component: () => import("./docs/test.md")
+  }, {
+    path: "/button",
+    name: "button",
+    component: () => import("./docs/button.md")
   }]
 });

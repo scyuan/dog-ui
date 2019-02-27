@@ -41,6 +41,7 @@ export default {
 .demo-container {
   transition: max-height 0.3s ease;
   overflow: hidden;
+  margin-top: 10px;
 }
 .docs-demo {
   width: 100%;
