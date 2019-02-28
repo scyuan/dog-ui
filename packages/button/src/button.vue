@@ -1,6 +1,7 @@
 <template>
   <button
     class="dog-button"
+    @click="handleClick"
     :class="[`dog-button-${type}`]"
   >
     <slot>Default</slot>
@@ -13,6 +14,11 @@ export default {
     type: {
       type: String,
       default: "default"
+    }
+  },
+  methods: {
+    handleClick(e) {
+      this.$emit("click", e);
     }
   }
 };
@@ -57,9 +63,9 @@ export default {
   background: #1890ff;
   color: #fff;
 }
-.dog-button-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
+// .dog-button-primary:focus {
+//   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+// }
 .dog-button-danger {
   border: 1px solid #f5222d;
   background: #f5222d;
