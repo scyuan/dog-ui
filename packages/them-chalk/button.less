@@ -1,0 +1,115 @@
+@import "./common/common.less";
+
+.dog-button {
+    line-height: 1.499;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: relative;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+}
+
+.dog-button:hover,
+.dog-button:active,
+.dog-button:focus {
+    outline: 0;
+    color: @primaryColor;
+    border-color: @primaryColor;
+}
+
+.dog-button:focus {
+    box-shadow: 0 0 0 2px @primaryLoopColor;
+}
+
+.dog-button-primary {
+    border: 1px solid @primaryColor;
+    background: @primaryColor;
+    color: #fff;
+}
+
+.dog-button-primary:focus {
+    box-shadow: 0 0 0 2px @primaryLoopColor;
+}
+
+.dog-button-primary:active,
+.dog-button-primary:hover {
+    background: @primaryDarkColor;
+    border-color: @primaryDarkColor;
+}
+
+.dog-button-danger {
+    border: 1px solid @dangerColor;
+    background: @dangerColor;
+    color: #fff;
+}
+
+.dog-button-primary:hover,
+.dog-button-primary:focus,
+.dog-button-primary:active,
+.dog-button-danger:active,
+.dog-button-danger:hover,
+.dog-button-danger:focus {
+    color: #fff;
+}
+
+.dog-button-danger:hover,
+.dog-button-danger:active {
+    border-color: @dangerDarkColor;
+    background: @dangerDarkColor;
+}
+
+.dog-button-danger:focus {
+    border-color: @dangerColor;
+    box-shadow: 0 0 0 2px @dangerLoopColor;
+}
+
+.dog-button-text {
+    color: @primaryColor;
+    border: 0;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dog-button-text:hover {
+    color: @primaryDarkColor;
+}
+
+.dog-button-text:active,
+.dog-button-text:focus {
+    border: 0;
+    box-shadow: none;
+}
+
+.dog-button_disabled,
+.dog-button_disabled:hover {
+    cursor: not-allowed;
+    background: @disabledColor;
+    border-color: @disabledDarkColor;
+    color: @disabledDarkColor;
+}
+
+.dog-button-text_disabled,
+.dog-button-text_disabled:hover {
+    background: transparent;
+    border-color: transparent;
+    color: @disabledDarkColor;
+}
