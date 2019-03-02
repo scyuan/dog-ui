@@ -45,14 +45,18 @@
     color: #fff;
 }
 
-.dog-button-primary:focus {
-    box-shadow: 0 0 0 2px @primaryLoopColor;
+.dog-button-primary:hover {
+    background: lighten(@primaryColor, 5%);
+    border-color: lighten(@primaryColor, 5%);
 }
 
-.dog-button-primary:active,
-.dog-button-primary:hover {
+.dog-button-primary:active {
     background: @primaryDarkColor;
     border-color: @primaryDarkColor;
+}
+
+.dog-button-primary:focus {
+    box-shadow: 0 0 0 2px @primaryLoopColor;
 }
 
 .dog-button-danger {
@@ -70,7 +74,6 @@
     color: #fff;
 }
 
-.dog-button-danger:hover,
 .dog-button-danger:active {
     border-color: @dangerDarkColor;
     background: @dangerDarkColor;
@@ -79,6 +82,15 @@
 .dog-button-danger:focus {
     border-color: @dangerColor;
     box-shadow: 0 0 0 2px @dangerLoopColor;
+}
+
+.dog-button-danger:hover {
+    background: lighten(@dangerColor, 10%);
+    border-color: lighten(@dangerColor, 10%);
+}
+
+.dog-button-danger:active {
+    background: @dangerDarkColor;
 }
 
 .dog-button-text {

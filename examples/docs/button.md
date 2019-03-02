@@ -1,4 +1,15 @@
-<style>.dog-button{margin-right:10px;}</style>
+<style>
+    .dog-button{
+        margin-right:10px;
+    } 
+    .dog-button-group .dog-button{
+        margin:0
+    }
+    .dog-button-group{
+        margin:10px;
+    }
+</style>
+
 <h4>按钮</h4>
 <dog-button>默认按钮</dog-button>
 <dog-button type="primary">正常按钮</dog-button>
@@ -41,3 +52,61 @@
 ```
 
 :::
+
+<dog-button-group>
+    <dog-button type="primary">正常按钮</dog-button>
+    <dog-button type="danger">警告按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+    <dog-button type="danger">警告按钮</dog-button>
+    <dog-button type="primary">正常按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+    <dog-button type="primary">正常按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+    <dog-button>默认按钮</dog-button>
+    <dog-button type="primary">正常按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+<dog-button>默认按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+    <dog-button type="primary">正常按钮</dog-button>
+    <dog-button type="primary">正常按钮</dog-button>
+    <dog-button type="primary">正常按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+<dog-button>默认按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+    <dog-button type="danger">警告按钮</dog-button>
+    <dog-button type="danger">警告按钮</dog-button>
+    <dog-button type="danger">警告按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+    <dog-button type="danger">警告按钮</dog-button>
+    <dog-button type="danger">警告按钮</dog-button>
+    <dog-button type="danger">警告按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+    <dog-button>默认按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+</dog-button-group>
+<div></div>
+<dog-button-group>
+    <dog-button disabled>默认按钮</dog-button>
+    <dog-button disabled>默认按钮</dog-button>
+</dog-button-group>

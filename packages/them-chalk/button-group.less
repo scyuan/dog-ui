@@ -1,0 +1,39 @@
+@import "./common/common.less";
+
+.dog-button-group {
+    position: relative;
+    display: inline-block;
+}
+
+.dog-button-group>.dog-button {
+    border-radius: 0;
+}
+
+.dog-button-group .dog-button:hover,
+.dog-button-group .dog-button:focus {
+    z-index: 2;
+}
+
+.dog-button-group>.dog-button:last-child:not(:first-child) {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.dog-button-group>.dog-button:first-child:not(:last-child) {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.dog-button-group .dog-button-primary:last-child:not(:first-child),
+.dog-button-group .dog-button-primary:not(:first-child) {
+    border-left-color: @primaryLightColor;
+}
+
+.dog-button-group .dog-button-danger:last-child:not(:first-child),
+.dog-button-group .dog-button-danger:not(:first-child) {
+    border-left-color: @dangerLightColor;
+}
+
+.dog-button-group>.dog-button-default:not(:first-child) {
+    margin-left: -1px;
+}
