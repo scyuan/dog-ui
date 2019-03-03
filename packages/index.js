@@ -1,7 +1,8 @@
 import DogButton from './button';
 import DogButtonGroup from './button-group';
+import DogIcon from './icon';
 
-const components = [DogButton, DogButtonGroup];
+const components = [DogButton, DogButtonGroup, DogIcon];
 
 const install = function (Vue) {
     if (install.installed) return;

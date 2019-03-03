@@ -53,15 +53,6 @@
 
 :::
 
-<dog-button-group>
-    <dog-button type="primary">正常按钮</dog-button>
-    <dog-button type="danger">警告按钮</dog-button>
-</dog-button-group>
-<div></div>
-<dog-button-group>
-    <dog-button type="danger">警告按钮</dog-button>
-    <dog-button type="primary">正常按钮</dog-button>
-</dog-button-group>
 <div></div>
 <dog-button-group>
     <dog-button type="primary">正常按钮</dog-button>
@@ -78,8 +69,6 @@
     <dog-button>默认按钮</dog-button>
     <dog-button type="primary">正常按钮</dog-button>
     <dog-button type="primary">正常按钮</dog-button>
-    <dog-button type="primary">正常按钮</dog-button>
-    <dog-button>默认按钮</dog-button>
     <dog-button>默认按钮</dog-button>
 </dog-button-group>
 <div></div>
@@ -88,8 +77,6 @@
     <dog-button>默认按钮</dog-button>
     <dog-button type="danger">警告按钮</dog-button>
     <dog-button type="danger">警告按钮</dog-button>
-    <dog-button type="danger">警告按钮</dog-button>
-    <dog-button>默认按钮</dog-button>
     <dog-button>默认按钮</dog-button>
 </dog-button-group>
 <div></div>
@@ -98,15 +85,10 @@
     <dog-button type="danger">警告按钮</dog-button>
     <dog-button type="danger">警告按钮</dog-button>
 </dog-button-group>
-<div></div>
-<dog-button-group>
-    <dog-button>默认按钮</dog-button>
-    <dog-button>默认按钮</dog-button>
-    <dog-button>默认按钮</dog-button>
-    <dog-button>默认按钮</dog-button>
-</dog-button-group>
-<div></div>
-<dog-button-group>
-    <dog-button disabled>默认按钮</dog-button>
-    <dog-button disabled>默认按钮</dog-button>
-</dog-button-group>
+
+<h4>带icon按钮</h4>
+
+<dog-button icon="ios-add"></dog-button>
+<dog-button icon="ios-add">默认按钮</dog-button>
+<dog-button type="primary" icon="ios-add">正常按钮</dog-button>
+<dog-button type="danger" icon="ios-add">警告按钮</dog-button>

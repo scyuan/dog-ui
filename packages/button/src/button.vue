@@ -8,7 +8,14 @@
       'dog-button-text_disabled':buttonDisabled && type=='text'
     }]"
   >
-    <slot></slot>
+    <i
+      class="dog-icon"
+      :class="iconType"
+      v-if="icon"
+    ></i>
+    <span v-if="$slots.default">
+      <slot></slot>
+    </span>
   </button>
 </template>
 <script>
@@ -19,11 +26,18 @@ export default {
       type: String,
       default: "default"
     },
+    icon: {
+      type: String,
+      default: ""
+    },
     disabled: Boolean
   },
   computed: {
     buttonDisabled: function() {
       return this.disabled;
+    },
+    iconType: function() {
+      return this.icon;
     }
   },
   methods: {
@@ -35,6 +49,7 @@ export default {
 </script>
 <style lang="less" scoped>
 @import "../../them-chalk/button.less";
+@import "../../them-chalk/icon.less";
 </style>
 
 
