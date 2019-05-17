@@ -67,10 +67,33 @@
 
 <div></div>
 <dog-button-group>
-<dog-button>默认按钮</dog-button>
     <dog-button>默认按钮</dog-button>
     <dog-button type="primary">正常按钮</dog-button>
     <dog-button type="primary">正常按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+</dog-button-group>
+
+<div></div>
+<dog-button-group>
+    <dog-button>默认按钮</dog-button>
+    <dog-button type="success">正常按钮</dog-button>
+    <dog-button type="success">正常按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+</dog-button-group>
+
+<div></div>
+<dog-button-group>
+    <dog-button>默认按钮</dog-button>
+    <dog-button type="info">正常按钮</dog-button>
+    <dog-button type="info">正常按钮</dog-button>
+    <dog-button>默认按钮</dog-button>
+</dog-button-group>
+
+<div></div>
+<dog-button-group>
+    <dog-button>默认按钮</dog-button>
+    <dog-button type="danger">正常按钮</dog-button>
+    <dog-button type="danger">正常按钮</dog-button>
     <dog-button>默认按钮</dog-button>
 </dog-button-group>
 
