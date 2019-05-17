@@ -11,16 +11,21 @@
 </style>
 
 <h4>按钮</h4>
-<dog-button>默认按钮</dog-button>
-<dog-button type="primary">正常按钮</dog-button>
-<dog-button type="danger">警告按钮</dog-button>
+<dog-button>默认</dog-button>
+<dog-button type="primary">正常</dog-button>
+<dog-button type="success">成功</dog-button>
+<dog-button type="danger">危险</dog-button>
+<dog-button type="info">信息</dog-button>
+
 
 :::demo
 
 ```html
-<dog-button>默认按钮</dog-button>
-<dog-button type="primary">正常按钮</dog-button>
-<dog-button type="danger">警告按钮</dog-button>
+<dog-button>默认</dog-button>
+<dog-button type="primary">正常</dog-button>
+<dog-button type="success">成功</dog-button>
+<dog-button type="danger">危险</dog-button>
+<dog-button type="info">信息</dog-button>
 ```
 
 :::

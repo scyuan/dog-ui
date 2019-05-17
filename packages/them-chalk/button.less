@@ -39,37 +39,49 @@
 .dog-button:active,
 .dog-button:focus {
     outline: 0;
-    color: @primaryColor;
-    border-color: @primaryColor;
+    color: @ElectronBlue;
+    border-color: @ElectronBlue;
 }
 
 .dog-button:focus {
-    box-shadow: 0 0 0 2px @primaryLoopColor;
+    box-shadow: 0 0 0 2px @LoopElectronBlue;
 }
 
 .dog-button-primary {
-    border: 1px solid @primaryColor;
-    background: @primaryColor;
+    border: 1px solid @ElectronBlue;
+    background: @ElectronBlue;
     color: #fff;
 }
 
 .dog-button-primary:hover {
-    background: lighten(@primaryColor, 5%);
-    border-color: lighten(@primaryColor, 5%);
+    background: lighten(@ElectronBlue, 5%);
+    border-color: lighten(@ElectronBlue, 5%);
 }
 
 .dog-button-primary:active {
-    background: @primaryDarkColor;
-    border-color: @primaryDarkColor;
+    background: @DarkElectronBlue;
+    border-color: @DarkElectronBlue;
 }
 
 .dog-button-primary:focus {
-    box-shadow: 0 0 0 2px @primaryLoopColor;
+    box-shadow: 0 0 0 2px @LoopElectronBlue;
 }
 
 .dog-button-danger {
-    border: 1px solid @dangerColor;
-    background: @dangerColor;
+    border: 1px solid @ChiCong;
+    background: @ChiCong;
+    color: #fff;
+}
+
+.dog-button-success {
+    border: 1px solid @MintLeaf;
+    background: @MintLeaf;
+    color: #fff;
+}
+
+.dog-button-info {
+    border: 1px solid @BrightYarrow;
+    background: @BrightYarrow;
     color: #fff;
 }
 
@@ -78,31 +90,64 @@
 .dog-button-primary:active,
 .dog-button-danger:active,
 .dog-button-danger:hover,
-.dog-button-danger:focus {
+.dog-button-danger:focus,
+.dog-button-success:active,
+.dog-button-success:hover,
+.dog-button-success:focus,
+.dog-button-info:active,
+.dog-button-info:hover,
+.dog-button-info:focus {
     color: #fff;
 }
 
-.dog-button-danger:active {
-    border-color: @dangerDarkColor;
-    background: @dangerDarkColor;
-}
-
 .dog-button-danger:focus {
-    border-color: @dangerColor;
-    box-shadow: 0 0 0 2px @dangerLoopColor;
+    border-color: @ChiCong;
+    box-shadow: 0 0 0 2px @LoopChiCong;
 }
 
 .dog-button-danger:hover {
-    background: lighten(@dangerColor, 10%);
-    border-color: lighten(@dangerColor, 10%);
+    background: lighten(@ChiCong, 10%);
+    border-color: lighten(@ChiCong, 10%);
 }
 
 .dog-button-danger:active {
-    background: @dangerDarkColor;
+    border-color: @DarkChiCong;
+    background: @DarkChiCong;
+}
+
+
+.dog-button-success:focus {
+    border-color: @MintLeaf;
+    box-shadow: 0 0 0 2px @LoopMintLeaf;
+}
+
+.dog-button-success:hover {
+    background: @LightMintLeaf;
+    border-color: @LightMintLeaf;
+}
+
+.dog-button-success:active {
+    border-color: @DarkMintLeaf;
+    background: @DarkMintLeaf;
+}
+
+.dog-button-info:focus {
+    border-color: @BrightYarrow;
+    box-shadow: 0 0 0 2px @LoopBrightYarrow;
+}
+
+.dog-button-info:hover {
+    background: @LightBrightYarrow;
+    border-color: @LightBrightYarrow;
+}
+
+.dog-button-info:active {
+    border-color: @DarkBrightYarrow;
+    background: @DarkBrightYarrow;
 }
 
 .dog-button-text {
-    color: @primaryColor;
+    color: @ElectronBlue;
     border: 0;
     box-shadow: none;
     padding-left: 0;
@@ -110,7 +155,7 @@
 }
 
 .dog-button-text:hover {
-    color: @primaryDarkColor;
+    color: @DarkElectronBlue;
 }
 
 .dog-button-text:active,
