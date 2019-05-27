@@ -1,6 +1,6 @@
-import DogIcon from './src/icon';
+import DIcon from './src/icon';
 
-DogIcon.install = function (Vue) {
-    Vue.component(DogIcon.name, DogIcon);
+DIcon.install = function (Vue) {
+    Vue.component(DIcon.name, DIcon);
 }
-export default DogIcon;
+export default DIcon;

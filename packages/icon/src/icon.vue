@@ -1,12 +1,9 @@
 <template>
-  <i
-    class="dog-icon"
-    :class="iconType"
-  ></i>
+  <i class="d-icon" :class="iconType"></i>
 </template>
 <script>
 export default {
-  name: "DogIcon",
+  name: "DIcon",
   props: {
     icon: {
       type: String,

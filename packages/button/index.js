@@ -1,6 +1,6 @@
-import DogButton from './src/button.vue';
+import DButton from './src/button.vue';
 
-DogButton.install = function (Vue) {
-    Vue.component(DogButton.name, DogButton);
+DButton.install = function (Vue) {
+    Vue.component(DButton.name, DButton);
 }
-export default DogButton;
+export default DButton;

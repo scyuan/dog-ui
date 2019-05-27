@@ -1,7 +1,7 @@
-import DogButtonGroup from './src/button-group.vue';
+import DButtonGroup from './src/button-group.vue';
 
-DogButtonGroup.install = function (Vue) {
-    Vue.component(DogButtonGroup.name, DogButtonGroup);
+DButtonGroup.install = function (Vue) {
+    Vue.component(DButtonGroup.name, DButtonGroup);
 }
 
-export default DogButtonGroup;
+export default DButtonGroup;

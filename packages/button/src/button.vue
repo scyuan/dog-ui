@@ -1,18 +1,14 @@
 <template>
   <button
-    class="dog-button"
+    class="d-button"
     @click="handleClick"
     :disabled="buttonDisabled"
-    :class="[`dog-button-${type}`,{
-      'dog-button_disabled':buttonDisabled,
-      'dog-button-text_disabled':buttonDisabled && type=='text'
+    :class="[`d-button-${type}`,{
+      'd-button_disabled':buttonDisabled,
+      'd-button-text_disabled':buttonDisabled && type=='text'
     }]"
   >
-    <i
-      class="dog-icon"
-      :class="iconType"
-      v-if="icon"
-    ></i>
+    <i class="d-icon" :class="iconType" v-if="icon"></i>
     <span v-if="$slots.default">
       <slot></slot>
     </span>
@@ -20,7 +16,7 @@
 </template>
 <script>
 export default {
-  name: "DogButton",
+  name: "DButton",
   props: {
     type: {
       type: String,

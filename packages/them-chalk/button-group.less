@@ -1,57 +1,57 @@
 @import "./common/common.less";
 
-.dog-button-group {
+.d-button-group {
     position: relative;
     display: inline-block;
 }
 
-.dog-button-group>.dog-button {
+.d-button-group>.d-button {
     border-radius: 0;
     z-index: 1;
 }
 
-.dog-button-group>.dog-button-primary,
-.dog-button-group>.dog-button-success,
-.dog-button-group>.dog-button-info,
-.dog-button-group>.dog-button-danger {
+.d-button-group>.d-button-primary,
+.d-button-group>.d-button-success,
+.d-button-group>.d-button-info,
+.d-button-group>.d-button-danger {
     z-index: 2;
 }
 
-.dog-button-group .dog-button:hover,
-.dog-button-group .dog-button:focus {
+.d-button-group .d-button:hover,
+.d-button-group .d-button:focus {
     z-index: 3;
 }
 
-.dog-button-group>.dog-button:last-child:not(:first-child) {
+.d-button-group>.d-button:last-child:not(:first-child) {
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
 }
 
-.dog-button-group>.dog-button:first-child:not(:last-child) {
+.d-button-group>.d-button:first-child:not(:last-child) {
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
 }
 
-.dog-button-group .dog-button-primary:last-child:not(:first-child),
-.dog-button-group .dog-button-primary:not(:first-child) {
+.d-button-group .d-button-primary:last-child:not(:first-child),
+.d-button-group .d-button-primary:not(:first-child) {
     border-left-color: @LightElectronBlue;
 }
 
-.dog-button-group .dog-button-danger:last-child:not(:first-child),
-.dog-button-group .dog-button-danger:not(:first-child) {
+.d-button-group .d-button-danger:last-child:not(:first-child),
+.d-button-group .d-button-danger:not(:first-child) {
     border-left-color: @LightChiCong;
 }
 
-.dog-button-group .dog-button-info:last-child:not(:first-child),
-.dog-button-group .dog-button-info:not(:first-child) {
+.d-button-group .d-button-info:last-child:not(:first-child),
+.d-button-group .d-button-info:not(:first-child) {
     border-left-color: @LightBrightYarrow;
 }
 
-.dog-button-group .dog-button-success:last-child:not(:first-child),
-.dog-button-group .dog-button-success:not(:first-child) {
+.d-button-group .d-button-success:last-child:not(:first-child),
+.d-button-group .d-button-success:not(:first-child) {
     border-left-color: @LightMintLeaf;
 }
 
-.dog-button-group>.dog-button-default:not(:first-child) {
+.d-button-group>.d-button-default:not(:first-child) {
     margin-left: -1px;
 }
