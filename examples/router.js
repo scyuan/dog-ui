@@ -5,7 +5,7 @@ import Router from "vue-router";
 
 Vue.use(Router);
 
-const docs = ["button", "icon"];
+const docs = ["button", "icon", "grid"];
 
 const routes = docs.map(doc => {
   return {

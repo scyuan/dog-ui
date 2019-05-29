@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <dog-button @click="demo">哈哈</dog-button>
-    <router-view />
+    <d-button @click="demo">哈哈</d-button>
+    <router-view/>
   </div>
 </template>
 <script>

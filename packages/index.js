@@ -1,8 +1,10 @@
-import DogButton from './button';
-import DogButtonGroup from './button-group';
-import DogIcon from './icon';
+import DButton from './button';
+import DButtonGroup from './button-group';
+import DIcon from './icon';
+import DRow from './row'
+import DCol from './col'
 
-const components = [DogButton, DogButtonGroup, DogIcon];
+const components = [DButton, DButtonGroup, DIcon, DRow, DCol];
 
 const install = function (Vue) {
     if (install.installed) return;
@@ -17,5 +19,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    DogButton
+    DButton
 }
