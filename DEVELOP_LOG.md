@@ -45,3 +45,24 @@
 
 
 #### 确定组件配色
+
+#### Grid布局
+
+Grid布局主要有Row（行）和Col（列）。需对[Class和Style的绑定](https://cn.vuejs.org/v2/guide/class-and-style.html)熟悉（对象和数组两种形式）
+
+Row 可选属性
+- gutter : col之间的间距，单位px。
+- type   : 默认是空，可填flex。
+- align  : flex布局交叉轴的排列方式
+- justify: flex布局主轴的排列方式
+
+Col 可选属性
+- span   : 所占格数（总共24格）
+
+### Row
+
+row.vue的开发没什么好说的。tag是div，通过props接受参数。然后通过computed先对参数进行一遍过滤（比如type是否是flex），标签上所使用的就直接是computed计算过的属性。
+
+### Col
+
+col自身是受span控制，除此之外还有父组件的gutter属性。那么如何受父亲组件gutter所影响呢，需要通过this.$parent读取父亲组件的属性。然后再添加对应的style属性。

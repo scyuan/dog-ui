@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <d-button @click="demo">哈哈</d-button>
+    <!-- <d-button @click="demo">哈哈</d-button> -->
     <router-view/>
   </div>
 </template>

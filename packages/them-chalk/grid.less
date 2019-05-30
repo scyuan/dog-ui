@@ -1,19 +1,59 @@
 .d-row {
   width: 100%;
+  overflow: hidden;
 }
 
-.d-row__flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -moz-box;
-  display: -moz-flex;
+.d-row-flex {
   display: flex;
 }
 
+.is-justify-flex-start {
+  justify-content: flex-start;
+}
+
+.is-justify-flex-end {
+  justify-content: flex-end;
+}
+
+.is-justify-center {
+  justify-content: center;
+}
+
+.is-justify-space-around {
+  justify-content: space-around;
+}
+
+.is-justify-space-between {
+  justify-content: space-between;
+}
+
+.is-align-flex-start {
+  align-items: flex-start;
+}
+
+.is-align-flex-end {
+  align-items: flex-end;
+}
+
+.is-align-center {
+  align-items: center;
+}
+
+.is-align-baseline {
+  align-items: baseline;
+}
+
+.is-align-stretch {
+  align-items: stretch;
+}
+
 .d-col {
-  display: inline-block;
+  float: left;
   box-sizing: border-box;
+}
+
+.d-col-0 {
+  width: 0%;
 }
 
 .d-col-1 {

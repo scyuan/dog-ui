@@ -1,5 +1,7 @@
 <template>
-  <div :class="['d-row',_type === 'flex'?'d-row__flex':'',]">
+  <div
+    :class="['d-row',_type === 'flex'?'d-row-flex':'',_type === 'flex' && _align ? `is-align-${_align}`:'',_type === 'flex' && _justify ? `is-justify-${_justify}`:'']"
+  >
     <slot></slot>
   </div>
 </template>
