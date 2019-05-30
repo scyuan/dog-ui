@@ -3,8 +3,9 @@ import DButtonGroup from './button-group';
 import DIcon from './icon';
 import DRow from './row'
 import DCol from './col'
+import DAlert from './alert';
 
-const components = [DButton, DButtonGroup, DIcon, DRow, DCol];
+const components = [DButton, DButtonGroup, DIcon, DRow, DCol, DAlert];
 
 const install = function (Vue) {
     if (install.installed) return;
