@@ -4,13 +4,11 @@
 1. 组件目录
 
 类似于:
-––––button                 // 组件根目录
-    |––––src               // 组件对象，即主要逻辑
-    |    |––––button.vue   
-    |
-    |––––index.js          // 导出该组件。具体怎么做看代码
-    |
-————index.js               // 整个组件根目录下，导出整个组件库。具体怎么做看代码
+├──button                 // 组件根目录
+├──src                    // 组件对象，即主要逻辑
+│  ├──button.vue   
+│  ├──index.js            // 导出该组件。具体怎么做看代码
+├──index.js               // 整个组件根目录下，导出整个组件库。具体怎么做看代码
 
 2. 然后开始开发组件
 3. 开发组件后需要导出该组件
@@ -44,9 +42,9 @@
 - `button`可以添加图标了。（css 相邻兄弟元素选择器）
 
 
-#### 确定组件配色
+### 确定组件配色
 
-#### Grid布局
+### Grid布局
 
 Grid布局主要有Row（行）和Col（列）。需对[Class和Style的绑定](https://cn.vuejs.org/v2/guide/class-and-style.html)熟悉（对象和数组两种形式）
 
@@ -59,10 +57,10 @@ Row 可选属性
 Col 可选属性
 - span   : 所占格数（总共24格）
 
-### Row
+#### Row
 
 row.vue的开发没什么好说的。tag是div，通过props接受参数。然后通过computed先对参数进行一遍过滤（比如type是否是flex），标签上所使用的就直接是computed计算过的属性。
 
-### Col
+#### Col
 
 col自身是受span控制，除此之外还有父组件的gutter属性。那么如何受父亲组件gutter所影响呢，需要通过this.$parent读取父亲组件的属性。然后再添加对应的style属性。
