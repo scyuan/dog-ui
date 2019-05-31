@@ -7,7 +7,9 @@
   color: @ElectronBlue;
   padding: 10px;
   border-radius: 5px;
+  transition: opacity .2s;
 }
+
 
 .is-alert-center {
   text-align: center;
@@ -42,4 +44,43 @@
 
 .d-alert-border_danger {
   border: 1px solid @LightChiCong;
+}
+
+.d-alert_content {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 5px;
+}
+
+.d-alert-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-style: normal;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.d-alert_icon {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.d-alert_title {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  margin: 0px 5px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  max-width: calc(100% - 30px);
+}
+
+.has-alert-title {
+  display: block;
+  padding-left: 16px;
+  box-sizing: border-box;
 }
